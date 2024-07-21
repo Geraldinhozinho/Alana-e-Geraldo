@@ -1,2 +1,2 @@
-# Desenvolvimento-de-Software-AlanaeGeraldo
+#Alana-e-Geraldo
  Atividade do Git-hub
