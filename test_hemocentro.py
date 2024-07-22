@@ -39,7 +39,7 @@ if __name__ == "__main__":
 
     modificar = input("Deseja modificar os dados de algum doador? (s/n): ").lower()
     if modificar == 's':
-        doador_index = int(input(f"Escolha o índice do doador (1 a {len(teste.doadores) - 1}): "))
+        doador_index = int(input(f"Escolha o índice do doador (0 a {len(teste.doadores) - 1}): "))
         doador = teste.doadores[doador_index]
        
         modificar_nome = input("Deseja modificar o nome? (s/n): ").lower()
@@ -50,13 +50,6 @@ if __name__ == "__main__":
             doador.set_nome(novo_nome)
             print(f"Nome após modificação: {doador.nome}")
 
-
-        modificar_id = input("Deseja modificar o ID do doador? (s/n): ").lower()
-        if modificar_id == 's':
-            print(f"ID doador antes da modificação: {doador.id_doador}")
-            novo_id = input("Digite o novo ID do doador: ")
-            doador.set_id_doador(novo_id)
-            print(f"ID doador após modificação: {doador.id_doador}")
 
 
         modificar_idade = input("Deseja modificar a idade? (s/n): ").lower()
@@ -74,5 +67,5 @@ if __name__ == "__main__":
             doador.set_tipo_sanguineo(novo_tipo_sanguineo)
             print(f"Tipo Sanguíneo após modificação: {doador.get_tipo_sanguineo()}")
 
-    print("\nDados dos doadores após as modificações:\n ")
+    print("\n-------------------Dados-------------------:\n ")
     teste.listar_doadores()    
